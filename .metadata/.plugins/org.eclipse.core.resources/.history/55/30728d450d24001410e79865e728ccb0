@@ -1,0 +1,7 @@
+package com.goeuro.test.service;
+
+public interface PositionService {
+	
+	void exportPositionSearch(String criteria);
+
+}

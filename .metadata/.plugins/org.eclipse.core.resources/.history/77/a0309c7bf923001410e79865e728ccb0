@@ -1,0 +1,20 @@
+package com.goeuro.test.service.impl;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+import com.goeuro.test.service.PositionService;
+
+@Component
+public class PositionServiceImpl implements PositionService{
+
+	@Autowired
+	RestTemplate restTemplate;
+	
+	@Override
+	public void exportPositionSearch(String criteria) {
+		
+		
+	}
+
+}

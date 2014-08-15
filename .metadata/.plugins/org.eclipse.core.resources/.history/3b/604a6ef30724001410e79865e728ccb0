@@ -1,0 +1,7 @@
+package com.goeuro.dao.impl;
+
+import com.goeuro.dao.PositionDAO;
+
+public class PositionDAOImpl implements PositionDAO {
+
+}

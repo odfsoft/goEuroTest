@@ -1,0 +1,11 @@
+package com.goeuro.test;
+
+import org.springframework.web.client.RestTemplate;
+
+import com.goeuro.test.domain.Page;
+
+public class main {
+    RestTemplate restTemplate = new RestTemplate();
+    Page page = restTemplate.getForObject("http://graph.facebook.com/pivotalsoftware", Page.class);
+
+}

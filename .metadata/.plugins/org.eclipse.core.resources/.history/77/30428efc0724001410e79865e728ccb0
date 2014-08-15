@@ -1,0 +1,10 @@
+package com.goeuro.dao.impl;
+
+import org.springframework.stereotype.Repository;
+
+import com.goeuro.dao.PositionDAO;
+
+@Repository
+public class PositionDAOImpl implements PositionDAO {
+
+}

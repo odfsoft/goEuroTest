@@ -1,0 +1,6 @@
+import com.goeuro.test.service.PositionService;
+
+
+public class PositionServiceImpl implements PositionService{
+
+}

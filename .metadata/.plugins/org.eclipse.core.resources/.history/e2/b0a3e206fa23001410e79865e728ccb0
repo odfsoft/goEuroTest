@@ -1,0 +1,33 @@
+package com.goeuro.test.service.impl;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+import org.springframework.web.client.RestTemplate;
+
+import com.goeuro.test.domain.Position;
+import com.goeuro.test.service.PositionService;
+
+@Component
+public class PositionServiceImpl implements PositionService{
+
+	@Autowired
+	RestTemplate restTemplate;
+	
+	@Value("${com.goeuro.api.url}")
+	private String apiUrl;
+	
+	@Override
+	public void exportPositionSearch(String criteria) {
+		Position position = restTemplate.getForObject(apiUrl, Position.class);
+		System.out.println("_type" + position.get_type());
+		System.out.println("id" + position.getId());
+		System.out.println("_type" + position.getName());
+		System.out.println("_type" + position.getType());
+		System.out.println("_type" + position.getClass());
+		System.out.println("_type" + position.getGeoPosition().getLatitude());
+		System.out.println("_type" + position.getGeoPosition().getLongitude()));
+		
+	}
+
+}

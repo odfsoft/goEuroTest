@@ -1,0 +1,5 @@
+package com.goeuro.test.exception;
+
+public class ParameterRequiredException extends Exception {
+
+}

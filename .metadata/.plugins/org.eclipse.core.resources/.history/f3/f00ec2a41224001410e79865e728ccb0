@@ -1,0 +1,7 @@
+package com.goeuro.test.exception;
+
+public class ParameterRequiredException extends GoEuroException {
+	  public CSVCreationException(String message) {
+	        super(message);
+	  }
+}

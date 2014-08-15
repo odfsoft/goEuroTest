@@ -1,0 +1,16 @@
+package com.goeuro.test.domain;
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+@JsonIgnoreProperties(ignoreUnknown = true)
+public class Position {
+	/*
+	 * _type, _id, name, type, latitude,longitude
+	 */
+    private String _type;
+    private String id;
+    private String name;
+    private String type;
+    private GeoPosition geoPosition;
+    
+}

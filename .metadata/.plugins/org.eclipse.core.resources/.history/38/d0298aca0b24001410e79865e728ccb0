@@ -1,0 +1,36 @@
+package com.goeuro.util;
+
+import java.io.IOException;
+import java.io.StringWriter;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
+import au.com.bytecode.opencsv.CSVWriter;
+
+import com.goeuro.test.domain.Position;
+
+public class CSVUtil {
+	
+	 private static void writeCSVData(List<Position> positions) throws IOException {
+	        StringWriter writer = new StringWriter();
+	        CSVWriter csvWriter = new CSVWriter(writer,'#');
+	        List<String[]> data  = toStringArray(positions);
+	        csvWriter.writeAll(data);
+	        csvWriter.close();
+	        System.out.println(writer);
+	    }
+	 
+    private static List<String[]> toStringArray(List<Position> positions) {
+	       List<String[]> records = new ArrayList<String[]>();
+	       //add header record
+	       records.add(new String[]{"_type","_id","Role","Salary"});
+	       Iterator<Employee> it = emps.iterator();
+	       while(it.hasNext()){
+	           Employee emp = it.next();
+	           records.add(new String[]{emp.getId(),emp.getName(),emp.getRole(),emp.getSalary()});
+	       }
+	        return records;
+	}
+
+}

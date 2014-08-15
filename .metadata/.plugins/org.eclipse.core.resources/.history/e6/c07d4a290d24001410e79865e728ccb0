@@ -1,0 +1,10 @@
+package com.goeuro.dao;
+import java.util.List;
+
+import com.goeuro.test.domain.Position;
+
+
+public interface PositionDAO {
+	
+	List<Position> getPositions(String url);
+}

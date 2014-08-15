@@ -1,0 +1,53 @@
+package com.datapine.dao.impl;
+
+import com.datapine.domain.User;
+import junit.framework.Assert;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+import org.springframework.transaction.annotation.Transactional;
+
+import java.util.Iterator;
+
+/**
+ * Created by IntelliJ IDEA.
+ * User: FEFONS
+ * Date: 9/19/13
+ * Time: 10:10 AM
+ * To change this template use File | Settings | File Templates.
+ */
+@RunWith(SpringJUnit4ClassRunner.class)
+@ContextConfiguration(locations = {"/testApplicationContext.xml", "/testApplicationPersistence.xml"})
+@Transactional
+public class UserDAOImplTest {
+    @Autowired
+    UserDAOImpl userDAO;
+
+    @Test
+    public void testFindAllOrderById() throws Exception {
+        Iterator<User> users = userDAO.findAllOrderById();
+        Assert.assertTrue("list of users is empty", users.hasNext());
+    }
+    
+    @Test
+    public void printx()
+    {
+    	int n = 9;
+    	   	
+    	for (int i = 0; i < n; i++) {
+    		result = result + getLine(n, i);
+		}
+    }
+
+    public String getLine(int n, int line){
+    	String result = "";
+    	for (int i = 0; i < n; i++) {
+    		if(i == line )
+			result+=" ";
+		}
+    	return result;
+    }
+    
+}

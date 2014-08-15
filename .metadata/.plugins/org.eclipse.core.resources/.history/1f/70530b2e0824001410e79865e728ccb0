@@ -1,0 +1,28 @@
+package com.goeuro.dao.impl;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Repository;
+import org.springframework.web.client.RestTemplate;
+
+import com.goeuro.dao.PositionDAO;
+import com.goeuro.test.domain.Position;
+
+@Repository
+public class PositionDAOImpl implements PositionDAO {
+
+	@Autowired
+	RestTemplate restTemplate;
+	
+	@Value("${com.goeuro.api.url}")
+	private String apiUrl;
+	
+	@Override
+	public List<Position> getPositionByCriteria(String url) {
+		Position[] position = restTemplate.getForObject(url, Position[].class);
+		
+	}
+	
+}

@@ -1,0 +1,14 @@
+package com.goeuro.util;
+
+public class CSVUtil {
+	
+	 private static void writeCSVData(List<Employee> emps) throws IOException {
+	        StringWriter writer = new StringWriter();
+	        CSVWriter csvWriter = new CSVWriter(writer,'#');
+	        List<String[]> data  = toStringArray(emps);
+	        csvWriter.writeAll(data);
+	        csvWriter.close();
+	        System.out.println(writer);
+	    }
+
+}

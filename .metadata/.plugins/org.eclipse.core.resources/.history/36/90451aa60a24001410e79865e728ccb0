@@ -1,0 +1,31 @@
+package com.goeuro.test.service.impl;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+
+import com.goeuro.dao.PositionDAO;
+import com.goeuro.test.domain.Position;
+import com.goeuro.test.service.PositionService;
+
+@Component
+public class PositionServiceImpl implements PositionService{
+
+	@Value("${com.goeuro.api.url}")
+	private String apiUrl;
+	
+	@Autowired
+	private PositionDAO positionDAO;
+	
+	@Override
+	public void exportPositionSearch(String criteria) {
+		List<Position> positions = positionDAO.getPositions(buildSearchUrl(criteria));
+	}
+
+	private String buildSearchUrl(String criteria) {
+		return apiUrl+criteria;
+	}
+
+}
