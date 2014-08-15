@@ -1,9 +1,0 @@
-package com.goeuro.test.service;
-
-import com.goeuro.exception.GoEuroException;
-
-public interface PositionService {
-	
-	void exportPositionSearch(String criteria) throws GoEuroException;
-
-}

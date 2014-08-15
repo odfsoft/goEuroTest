@@ -1,5 +1,0 @@
-package com.goeuro.exception;
-
-public class RemoteResourceException extends Exception {
-
-}

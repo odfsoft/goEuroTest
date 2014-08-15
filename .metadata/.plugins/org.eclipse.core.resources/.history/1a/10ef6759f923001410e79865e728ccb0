@@ -1,8 +1,0 @@
-import org.springframework.stereotype.Service;
-
-import com.goeuro.test.service.PositionService;
-
-@Service
-public class PositionServiceImpl implements PositionService{
-
-}

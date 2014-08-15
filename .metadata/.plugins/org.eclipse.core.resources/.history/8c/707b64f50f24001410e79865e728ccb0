@@ -1,7 +1,0 @@
-package com.goeuro.test.exception;
-
-public class RemoteResourceException extends Exception {
-	  public RemoteResourceException(String message) {
-	        super(message);
-	  }
-}

@@ -1,7 +1,0 @@
-package com.goeuro.exception;
-
-public class CSVCreationException extends Exception {
-	  public CSVCreationException(String message) {
-	        super(message);
-	  }
-}

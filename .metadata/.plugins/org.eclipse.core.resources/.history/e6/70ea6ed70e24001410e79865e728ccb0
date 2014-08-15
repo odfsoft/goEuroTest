@@ -1,5 +1,0 @@
-package com.goeuro.exception;
-
-public class GoEuroException extends Exception{
-
-}

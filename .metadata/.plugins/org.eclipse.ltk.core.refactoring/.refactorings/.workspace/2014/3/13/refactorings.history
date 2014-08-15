@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Delete 14 resources" deleteContents="false" description="Delete 14 resources" element1="/datapine-analytics-dwh" element10="/datapine-payment-updater" element11="/datapine-pivot" element12="/datapine-reports" element13="/datapine-services" element14="/datapine-test-app" element2="/datapine-analytics-dwh-consumer" element3="/datapine-analytics-dwh-logs-reader" element4="/datapine-backend" element5="/datapine-backend-aggregator" element6="/datapine-common" element7="/datapine-common-db" element8="/datapine-extractor" element9="/datapine-payment" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="14" stamp="1395864463690"/>
-</session>

@@ -1,7 +1,0 @@
-package com.goeuro.test.service;
-
-public interface PositionService {
-	
-	void p
-
-}

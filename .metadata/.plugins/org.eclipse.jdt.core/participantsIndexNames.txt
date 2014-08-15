@@ -1,5 +1,0 @@
-INDEX VERSION 1.126
-/home/folger/workspace/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/686873878.index
-/datapine-test-app/src/main/java
-/home/folger/workspace/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/1125753182.index
-/datapine-backend/src/main/java

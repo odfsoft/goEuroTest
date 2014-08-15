@@ -1,8 +1,0 @@
-package com.goeuro.test.domain;
-
-public class GeoPosition {
-	
-	private String latitude;
-	private String longitude;
-
-}
